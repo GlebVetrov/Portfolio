@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theyalow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-header-and-player">
+        <div class="container">
+            <header class="main-header">
+                <nav class="main-navigation">
+                    <a class="main-header-logo">
+                        <img src="img/logo.svg" width="83" height="83" alt="theyalow"><h1>THEYALOW</h1>
+                    </a>
+                    <ul class="site-navigation">
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="player-block">
+                <div class="player-block__player">
+                    <video src="#" width="550" height="330" poster="img/player.png"></video>
+                </div>
+                <div class="player-block__text">
+                    <p>The cool</p>
+                    <p>The minimal</p>
+                </div>
+            </section>
+        </div>
+        <button class="left-control"></button>
+        <button class="right-control"></button>
+    </div>
+
+        <main>
+            <section class="features">
+                <div class="container">
+                    <div class="features-block">
+                        <div class="features-block__design"><img src="img/design.svg" alt="design"><span>better design</span></div>
+                        <div class="features-block__customise"><img src="img/custom.svg" alt="custom"> <span>customise</span> </div>
+                        <div class="features-block__its-free"><img src="img/plane.svg" alt="plane"><span>its free</span></div>
+                    </div>
+                </div>
+            </section>
+            <section class="yellow-block">
+                <div class="container">
+                    <div class="section">
+                        <div class="section__header">
+                            <h2 class="section__text">lorem ipsum dolor sit amet</h2>
+                        </div>
+                        <div class="section__blocks">
+                            <div class="section__left">
+                                <div class="left__text">
+                                    <p class="left__text--text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut ullamcorper neque.
+                                    </p>
+                                </div>
+                                <div class="left-player">
+                                    <img class="left-video" src="img/jorge.png" alt="jorge">
+                                    <div class="left-player--play"></div>
+                                </div>
+                            </div>
+                            <div class="section__right">
+                                <div class="right__date">
+                                    <p class="right__date--text">
+                                        22
+                                    </p>
+                                </div>
+                                <div class="right__twitter"></div>
+                                <div class="right__img"></div>
+                            </div>
+                        </div>
+                        <div class="calendar">
+                            <p class="calendar__date">25</p>
+                            <p class="calendar__month">april</p>
+                        </div>
+                        <div class="scroll"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer--grey">
+                    <div class="footer-header">
+                        <h1 class="footer-header--header">
+                            Lorem ipsum dolor sit amet
+                        </h1>
+                    </div>
+                    <div class="footer-content">
+                        <div class="footer-images">
+                            <div class="footer--laptop">
+                                <div class="footer--laptop--circle">
+                                    <div class="footer--laptop--c__text">its 100% free</div>
+                                </div>
+                            </div>
+                            <div class="footer--pad"></div>
+                            <div class="footer--phone"></div>
+                        </div>
+                        <div class="footer-text">
+                            <ul>
+                                <li class="footer-text__item">Set art perspiciatis unde omnis</li>
+                                <li class="footer-text__item">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                                <li class="footer-text__item">Set art perspiciatis unde omnis</li>
+                                <li class="footer-text__item">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="section--grey">
+            <div class="container">
+                <div class="copyright">
+                    <div class="footer-logo">
+                        <div class="footer-logo__img"></div>
+                        <p class="footer-logo__text">theyalow</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="button">
+        <button class="button-show">Mobile</button>
+        <button onclick="window.location.href='../../index.html'">Back</button>
+    </div>
+    <script>
+        const container = document.querySelector('.main-container');
+        const button = document.querySelector('.button-show');
+        console.log(button.textContent);
+        button.addEventListener('click', () => {
+            if(button.textContent === 'Mobile') {
+                button.textContent = 'Desktop';
+                container.style.width = '375px';
+                return;
+            }
+            button.textContent = 'Mobile';
+            container.style.width = '100%';
+        });
+    </script>
+</body>
+</html>
