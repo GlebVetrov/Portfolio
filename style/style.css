@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+}
+
+.main {
+    display: inline-block;
+}
+
+.card {
+    display: flex;
+}
+
+.card-foto {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-body-link {
+    font-size: 16px;
+    color: grey;
+    text-decoration: none;
+}
+
+.card-body-link:hover {
+    color: blue;
+}
+
+.education {
+    width: 1000px;
+    text-align: left;
+}
+
+.education-title {
+    cursor: pointer;
+}
+
+.education-title span {
+    vertical-align: middle;
+    font-size: 16px;
+    color: grey;
+}
+
+.education-items {
+    list-style-type: none;
+}
+
+.education-close {
+    display: none;
+}
+
+.projects {
+    text-align: left;
+}
