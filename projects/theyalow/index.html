@@ -1,148 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Theyalow</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-</head>
+<link href="assets/css/app.css" rel="stylesheet"></head>
 <body>
-    <div class="main-container">
-        <div class="main-header-and-player">
-        <div class="container">
-            <header class="main-header">
-                <nav class="main-navigation">
-                    <a class="main-header-logo">
-                        <img src="img/logo.svg" width="83" height="83" alt="theyalow"><h1>THEYALOW</h1>
+    <div class="bg-top">
+        <header class="header">
+            <div class="container">
+                <nav class="header-content">
+                    <a class="header-logo">
+                        <img class="header-logo__img" src="assets/img/logo.svg" width="83" height="83" alt="logo">
+                        <h1 class="header-logo__text">THEYALOW</h1>
                     </a>
-                    <ul class="site-navigation">
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
+                    <nav class="header-navigation">
+                        <ul class="header-navigation__items">
+                            <li class="header-navigation__item">
+                                <img class="header-navigation__img" src="assets/img/about.svg" alt="img">
+                                <a class="header-navigation__link" href="#">about us</a>
+                            </li>
+                            <li class="header-navigation__item">
+                                <img class="header-navigation__img" src="assets/img/services.svg" alt="img">
+                                <a class="header-navigation__link" href="#">services</a>
+                            </li>
+                            <li class="header-navigation__item">
+                                <img class="header-navigation__img" src="assets/img/contact.svg" alt="img">
+                                <a class="header-navigation__link" href="#">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </nav>
-            </header>
-            <section class="player-block">
-                <div class="player-block__player">
-                    <video src="#" width="550" height="330" poster="img/player.png"></video>
-                </div>
-                <div class="player-block__text">
-                    <p>The cool</p>
-                    <p>The minimal</p>
-                </div>
-            </section>
-        </div>
-        <button class="left-control"></button>
-        <button class="right-control"></button>
+            </div>
+        </header>
+        <section class="main-banner">
+            <div class="arrow">
+                <div class="arrow-prev"><img src="assets/img/left-control.svg" alt="Prev"></div>
+                <div class="arrow-next"><img src="assets/img/right-control.svg" alt="Next"></div>
+            </div>
+            <div class="container">
+                <section class="main-banner__content">
+                    <div class="main-banner__player">
+                        <video class="main-banner__video" src="#" width="550" height="330"
+                               poster="assets/img/player.png"></video>
+                    </div>
+                    <div class="main-banner__description">
+                        <p class="main-banner__text yellow">The cool</p>
+                        <p class="main-banner__text">The minimal</p>
+                    </div>
+                </section>
+            </div>
+        </section>
     </div>
+    <main class="main">
+        <section class="advantages">
+            <div class="container">
+                <ul class="advantages__items">
+                    <li class="advantages__item">
+                        <img class="advantages__img" src="assets/img/design.svg" alt="pic">
+                        <span class="advantages__text">better design</span>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="advantages__img" src="assets/img/custom.svg" alt="pic">
+                        <span class="advantages__text">customize</span>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="advantages__img" src="assets/img/plane.svg" alt="pic">
+                        <span class="advantages__text">its free</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="news__content">
+                    <h2 class="news__title">Lorem ipsum dolor sit amet</h2>
+                    <div class="news__info">
+                        <div class="news__desc-and-video">
+                            <div class="news__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
+                                <img class="news__desc-img img-plus" src="assets/img/plus.svg"
+                                     alt="plus" width="11" height="11">
+                            </div>
+                            <div class="news__video">
+                                <video src="#" width="315" height="232" poster="assets/img/video.png"></video>
+                            </div>
+                        </div>
+                        <div class="news__twitter">
+                            <span class="news__twitter-num">22</span>
+                            <img class="news__twitter-img img-plus" src="assets/img/plus.svg"
+                                 alt="plus" width="11" height="11">
+                            <img class="news__twitter-img-twitter" src="assets/img/twitter.svg"
+                                 alt="twitter" width="163" height="133">
+                            <div class="news__twitter-chat">
+                                <div class="news__twitter-massage selected">Daily Mobile UI Design Inspiration #1  via @cssauthor</div>
+                                <div class="news__twitter-massage">Daily Mobile UI Design Inspiration #1  via @cssauthor</div>
+                                <div class="news__twitter-massage">Daily Mobile UI Design Inspiration #1  via @cssauthor</div>
+                                <div class="news__twitter-twit">
+                                    <input class="news__twitter-twit__input" type="text">
+                                    <button class="news__twitter-twit__btn">Tweet</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__calendar">
+                        <span class="news__calendar-date">
+                            25
+                        </span>
+                        <span class="news__calendar-month">
+                            april
+                        </span>
+                    </div>
+                    </div>
+                    <input class="news__range" type="range" min="0" max="4">
+                </div>
+        </section>
+        <section class="description">
+            <div class="container">
+                <div class="description__content">
+                    <h2 class="description__content-title">
+                        Lorem ipsum dolor sit amet
+                    </h2>
+                    <div class="description__info">
+                        <div class="description__info-images">
+                            <div class="description__info-free">Its 100% Free</div>
+                            <img src="assets/img/desktop.png" alt="desktop" class="description__info-img"
+                                width="323" height="255">
+                            <img src="assets/img/tablet.png" alt="tablet" class="description__info-img"
+                                width="129" height="173">
+                            <img src="assets/img/mobile.png" alt="mobile" class="description__info-img"
+                                width="39" height="63">
+                        </div>
+                        <ul class="description__info-items">
+                            <li class="description__info-item">
+                                Sed ut perspiciatis unde omnis
+                            </li>
+                            <li class="description__info-item">
+                                Lorem ipsum dolor sit amet, con sectetur adipisicing
+                            </li>
+                            <li class="description__info-item">
+                                Sed ut perspiciatis unde omnis
+                            </li>
+                            <li class="description__info-item">
+                                Lorem ipsum dolor sit amet, con sectetur adipisicing
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <main>
-            <section class="features">
-                <div class="container">
-                    <div class="features-block">
-                        <div class="features-block__design"><img src="img/design.svg" alt="design"><span>better design</span></div>
-                        <div class="features-block__customise"><img src="img/custom.svg" alt="custom"> <span>customise</span> </div>
-                        <div class="features-block__its-free"><img src="img/plane.svg" alt="plane"><span>its free</span></div>
-                    </div>
-                </div>
-            </section>
-            <section class="yellow-block">
-                <div class="container">
-                    <div class="section">
-                        <div class="section__header">
-                            <h2 class="section__text">lorem ipsum dolor sit amet</h2>
-                        </div>
-                        <div class="section__blocks">
-                            <div class="section__left">
-                                <div class="left__text">
-                                    <p class="left__text--text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut ullamcorper neque.
-                                    </p>
-                                </div>
-                                <div class="left-player">
-                                    <img class="left-video" src="img/jorge.png" alt="jorge">
-                                    <div class="left-player--play"></div>
-                                </div>
-                            </div>
-                            <div class="section__right">
-                                <div class="right__date">
-                                    <p class="right__date--text">
-                                        22
-                                    </p>
-                                </div>
-                                <div class="right__twitter"></div>
-                                <div class="right__img"></div>
-                            </div>
-                        </div>
-                        <div class="calendar">
-                            <p class="calendar__date">25</p>
-                            <p class="calendar__month">april</p>
-                        </div>
-                        <div class="scroll"></div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="main-footer">
-            <div class="container">
-                <div class="footer--grey">
-                    <div class="footer-header">
-                        <h1 class="footer-header--header">
-                            Lorem ipsum dolor sit amet
-                        </h1>
-                    </div>
-                    <div class="footer-content">
-                        <div class="footer-images">
-                            <div class="footer--laptop">
-                                <div class="footer--laptop--circle">
-                                    <div class="footer--laptop--c__text">its 100% free</div>
-                                </div>
-                            </div>
-                            <div class="footer--pad"></div>
-                            <div class="footer--phone"></div>
-                        </div>
-                        <div class="footer-text">
-                            <ul>
-                                <li class="footer-text__item">Set art perspiciatis unde omnis</li>
-                                <li class="footer-text__item">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                                <li class="footer-text__item">Set art perspiciatis unde omnis</li>
-                                <li class="footer-text__item">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <footer class="section--grey">
-            <div class="container">
-                <div class="copyright">
-                    <div class="footer-logo">
-                        <div class="footer-logo__img"></div>
-                        <p class="footer-logo__text">theyalow</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <div class="button">
-        <button class="button-show">Mobile</button>
-        <button onclick="window.location.href='../../index.html'">Back</button>
-    </div>
-    <script>
-        const container = document.querySelector('.main-container');
-        const button = document.querySelector('.button-show');
-        console.log(button.textContent);
-        button.addEventListener('click', () => {
-            if(button.textContent === 'Mobile') {
-                button.textContent = 'Desktop';
-                container.style.width = '375px';
-                return;
-            }
-            button.textContent = 'Mobile';
-            container.style.width = '100%';
-        });
-    </script>
-</body>
+    <footer class="footer">
+        <div class="footer__content container">
+            <img src="assets/img/footer-logo.png" alt="logo"
+                    class="footer__logo" width="54" height="54">
+            TheYalow
+        </div>
+    </footer>
+
+<script type="text/javascript" src="assets/js/app.js"></script></body>
 </html>
